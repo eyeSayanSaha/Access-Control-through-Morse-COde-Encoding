@@ -8,12 +8,12 @@ const int trigger = 2;
 const int echo = 3;
 int go = 0;
 int len =0;
-String fin = "";
+String fin = "Sayan";
 String morse_array[50];
 int test = 0;
 int m_inc = 0;
 char m_in[5];
-String translated ="";
+String translated ="Sayan";
 int buttonState = 0; 
 String morsecode[] ={
     ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
@@ -76,6 +76,7 @@ void loop() {
          delay (300);
          if  (digitalRead(star)==HIGH)
          convert();
+         digitalRead(led,HIGH);
       else
         while (digitalRead(star)==LOW)
         check_button();
